@@ -21,5 +21,10 @@
 18. ***Insertion Sort**
 19. ***Quick Sort**
 20. **Bubble Sort**
-
+---
 ___(* Incompleted)___
+
+<> *_An additional file is added for testing sorting algorithms_* <>
+
+---
+	If bugs,errors or any kind of code inconsistencies found, feel free to use the pull request button. :)
