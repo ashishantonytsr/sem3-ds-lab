@@ -16,7 +16,6 @@
 */
 
 #include <stdio.h>
-#include <string.h>
 
 void pattern_match(char txt[], char pat[])
 {
