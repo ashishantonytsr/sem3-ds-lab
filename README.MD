@@ -6,12 +6,12 @@
 03. **Pattern matching algorithm**
 04. **Append two arrays**
 05. **Binary search**
-06. ***Sparse matrix**
-07. ***Creation of Singly linked list**
-08. ***Deletion from Singly linked list**
-09. ***Creation of Doubly linked list**
-10. ***Implement Stack using Array**
-11. ***Implement Stack using LL**
+06. **Sparse matrix**
+07. **Creation of Singly linked list**
+08. **Deletion from Singly linked list**
+09. **Creation of Doubly linked list**
+10. **Implement Stack using Array**
+11. **Implement Stack using LL**
 12. **Infix to Postfix**
 13. ***Implement Queue using Array**
 14. ***Implement Queue using LL**
@@ -27,4 +27,5 @@ ___(* Incompleted)___
 <> *_An additional file is added for testing sorting algorithms_* <>
 
 ---
-	If bugs,errors or any kind of code inconsistencies found, feel free to use the pull request button. :)
+	-Programs are tested on gcc compiler and may show errors and/or warnings on TurboC++.
+	-If bugs,errors or any kind of code inconsistencies found, feel free to use the pull request button. :)
