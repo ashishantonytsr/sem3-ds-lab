@@ -51,11 +51,9 @@ void displayListFromFirst();
 void displayListFromEnd();
 
 int main()
-
 {
 	int n, choice;
-	head = NULL;
-	last = NULL;
+	head = last = NULL;
 	printf("Enter the number of nodes : ");
 	scanf("%d", &n);
 
@@ -75,8 +73,7 @@ void createList(int n)
 	int i, data;
 	struct node *newNode;
 
-	if (n < 1)
-		return;
+	if (n < 1)	return;
 
 	// inserting first node
 	head = (struct node *)malloc(sizeof(struct node));
@@ -89,6 +86,7 @@ void createList(int n)
 		head->prev = head->next = NULL;
 		last = head;
 	}
+	// inserting rest of the nodes
 	for (i = 2; i <= n; i++)
 	{
 		newNode = (struct node *)malloc(sizeof(struct node));
@@ -110,11 +108,10 @@ void createList(int n)
 void displayListFromFirst()
 {
 	struct node *temp;
-	if (head == NULL)
-	{
-		printf("List is empty.");
-		return;
+	if (head == NULL){
+		printf("List is empty."); return;
 	}
+
 	printf("\nLIST : ");
 	for (temp = head; temp != NULL; temp = temp->next)
 		printf(" %d ->", temp->data);
@@ -124,11 +121,10 @@ void displayListFromFirst()
 void displayListFromEnd()
 {
 	struct node *temp;
-	if (last == NULL)
-	{
-		printf("List is empty.");
-		return;
+	if (last == NULL){
+		printf("List is empty."); return;
 	}
+	
 	printf("\nLIST : ");
 	for (temp = last; temp != NULL; temp = temp->prev)
 		printf(" %d ->", temp->data);

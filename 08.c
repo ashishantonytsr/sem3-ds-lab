@@ -75,12 +75,10 @@ void delete_node(node **head, int data){
 		return;
 	}
 	// traversing until node containing data
-	for (; iter->next && iter->next->data != data; iter = iter->next)
-		;
+	for (; iter->next && iter->next->data != data; iter = iter->next);
 
 	// deleting node
-	if (iter->next)
-	{
+	if (iter->next){
 		temp = iter->next;
 		iter->next = iter->next->next;
 		free(temp);

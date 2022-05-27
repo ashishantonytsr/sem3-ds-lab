@@ -49,10 +49,8 @@ void push(int item)
 void pop()
 {
 	node *temp;
-	if (TOP == NULL)
-	{
-		printf("Stack UnderFlow..!\n");
-		return;
+	if (TOP == NULL){
+		printf("Stack UnderFlow..!\n"); return;
 	}
 	temp = TOP;
 	TOP = TOP->next;
@@ -60,14 +58,12 @@ void pop()
 	free(temp);
 }
 
-void display(node *TOP)
+void display()
 {
+	node *temp;
 	printf("\nSTACK\n|TOP|-> ");
-	while (TOP)
-	{
-		printf("%d-> ", TOP->data);
-		TOP = TOP->next;
-	}
+	for(temp = TOP; temp != NULL; temp = temp->next)
+		printf("%d-> ", temp->data);
 	printf("|NULL|");
 }
 
@@ -89,7 +85,7 @@ void main()
 			pop();
 			break;
 		case 3:
-			display(TOP);
+			display();
 			break;
 		case 4:
 			printf("\n Exit...");

@@ -40,6 +40,7 @@ void push()
 	else
 		printf("\n\n\tStack overflow!");
 }
+
 void pop()
 {
 	if (top != -1)
@@ -47,6 +48,7 @@ void pop()
 	else
 		printf("\n\n\tStack underflow!");
 }
+
 void display()
 {
 	int i;
@@ -72,7 +74,7 @@ int main()
 		: (choice == 4) ? printf("Exit point...")
 										: printf("Invalid option!");
 	} while (choice != 4);
-	// getch();
+	getch();
 	return 0;
 }
 
