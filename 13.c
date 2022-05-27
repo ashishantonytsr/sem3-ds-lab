@@ -1,18 +1,45 @@
 // Implement queue using array
 
-#include <stdio.h>
-#include <stdlib.h>
+// Algorithm
+/*
+1. start
+2. create queue Q using array with size, SIZE
+3. initialize FRONT & REAR as -1
+4. For insertion (ENQUEUE)
+	4.1. if REAR < SIZE-1
+		4.1.1. read item to be inserted as ITEM
+		4.1.2. if FRONT is -1, increment FRONT by 1
+		4.1.3. increment REAR by 1
+		4.1.4. set Q[REAR] as ITEM
+	4.2. else, print "Queue Overflow"
+5. For deletion (DEQUEUE)
+	5.1. if FRONT is -1 or FRONT > REAR,
+		5.1.1. print "Queue Underflow"
+	5.2. else,
+		5.2.1. print Q[FRONT] as deleted item
+		5.2.2. increment FRONT by 1
+6. To display queue
+	6.1. if FRONT is -1 or FRONT>REAR,
+		6.1.1. print "Queue is empty", exit
+	6.2. set I=FRONT
+	6.3. while I<=REAR, repeat steps 6.3.1 & 6.3.2
+		6.3.1. print Q[I]
+		6.3.2. increment I by 1
+7. stop
+ */
 
-#define MAX 50
-int queue_array[MAX], rear = -1, front = -1;
+#include <stdio.h>
+#define SIZE 50
+int Q[SIZE], rear = -1, front = -1;
 
 void insert();
 void delete ();
 void display();
-void main()
+
+int main()
 {
 	int choice;
-	while (1)
+	do
 	{
 		printf("Enter your choice \n");
 		printf("\t1. Insert element to queue \n");
@@ -32,42 +59,36 @@ void main()
 			display();
 			break;
 		case 4:
-			exit(1);
+			return 0;
 			getch();
 		default:
 			printf("Wrong choice! \n");
 		}
-	}
+	} while (choice < 4);
+	return 0;
 }
 
 void insert()
 {
-	int add_item;
-	if (rear == MAX - 1)
+	int item;
+	if (rear == SIZE - 1)
 		printf("\n\tQueue Overflow! \n");
 	else
 	{
 		if (front == -1)
-			front = 0;
-		printf("Insert the element in queue : ");
-		scanf("%d", &add_item);
-		rear = rear + 1;
-		queue_array[rear] = add_item;
+			front++;
+		printf("Enter the element to be inserted : ");
+		scanf("%d", &item);
+		Q[++rear] = item;
 	}
 }
 
 void delete ()
 {
 	if (front == -1 || front > rear)
-	{
 		printf("\n\tQueue Underflow! \n");
-		return;
-	}
 	else
-	{
-		printf("Element deleted from queue is : %d\n", queue_array[front]);
-		front = front + 1;
-	}
+		printf("Element deleted from queue is : %d\n", Q[front++]);
 }
 
 void display()
@@ -79,7 +100,43 @@ void display()
 	{
 		printf("QUEUE : ");
 		for (i = front; i <= rear; i++)
-			printf("%d ", queue_array[i]);
+			printf("%d ", Q[i]);
 		printf("\n");
 	}
 }
+
+// Expected output
+/*
+Enter your choice
+				1. Insert element to queue
+				2. Delete element from queue
+				3. Display elements in queue
+				4. Exit
+1
+Enter the element to be inserted : 12
+Enter your choice
+				1. Insert element to queue
+				2. Delete element from queue
+				3. Display elements in queue
+				4. Exit
+1
+Enter the element to be inserted : 23
+Enter your choice
+				1. Insert element to queue
+				2. Delete element from queue
+				3. Display elements in queue
+				4. Exit
+1
+Enter the element to be inserted : 34
+				2. Delete element from queue
+				3. Display elements in queue
+				4. Exit
+3
+QUEUE : 23 34 45
+Enter your choice
+				1. Insert element to queue
+				2. Delete element from queue
+				3. Display elements in queue
+				4. Exit
+4
+ */
