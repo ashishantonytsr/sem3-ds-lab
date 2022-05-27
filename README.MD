@@ -13,8 +13,8 @@
 10. **Implement Stack using Array**
 11. **Implement Stack using LL**
 12. **Infix to Postfix**
-13. ***Implement Queue using Array**
-14. ***Implement Queue using LL**
+13. **Implement Queue using Array**
+14. **Implement Queue using LL**
 15. ***Searching in BST**
 16. **Exchange Sort**
 17. **Selection Sort**
