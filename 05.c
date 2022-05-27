@@ -39,6 +39,8 @@ int binary_search(int arr[], int beg, int end, int item)
 void main()
 {
 	int a[20], n, item, i, loc;
+	// clrscr();
+	
 	printf("Enter the size of array: ");
 	scanf("%d", &n);
 	printf("Enter elements of the array in sorted form \n");
