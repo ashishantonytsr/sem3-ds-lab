@@ -13,6 +13,7 @@
 9.  if j=PATLEN-1, print i as index of pattern
 10. increment j by 1
 11. increment i by 1
+12. stop
 */
 
 #include <stdio.h>

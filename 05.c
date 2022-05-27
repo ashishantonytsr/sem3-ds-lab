@@ -10,7 +10,7 @@
 	 6.1. print "ITEM NOT FOUND", goto step 10
 6. compute MID as floor value of (BEG+END)/2
 7. if ITEM = ARR[MID]
-	 7.1. print MID+1
+	 7.1. print MID+1 as the location of the ITEM, goto step 10
 8. else if ITEM < ARR[MID]
 	 8.1. set END as MID-1
 	 8.2. goto step 5
