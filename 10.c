@@ -70,7 +70,6 @@ int main()
 	{
 		printf("\nChoose from below \n\t1.Push \n\t2.Pop \n\t3.Display \n\t4.Exit \n\t-> ");
 		scanf("%d", &choice);
-
 		switch (choice){
 			case 1: push(); break;
 			case 2: pop(); break;
@@ -78,6 +77,7 @@ int main()
 			case 4: printf("Exit Point..."); break;
 			default: printf("Invalid option..!"); break;
 		}
+	} while (choice != 4);
 	getch();
 	return 0;
 }
