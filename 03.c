@@ -26,15 +26,20 @@ void pattern_match(char txt[], char pat[])
 		{
 			if (txt[i + j] != pat[j])
 				break;
-			if (j == patlen - 1)
+			if (j == patlen - 1){
 				printf("\nPattern found at index %d", i + 1);
+				return;
+			}
 		}
 	}
+	printf("pattern not found.. :(");
 }
 
 void main()
 {
 	char txt[100], pat[100];
+	// clrscr();
+
 	printf("Enter the text : ");
 	gets(txt);
 	printf("Enter the pattern to check : ");

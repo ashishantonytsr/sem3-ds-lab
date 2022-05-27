@@ -54,6 +54,7 @@ void main()
 {
 	int n, i, data;
 	struct node *head = NULL;
+	// clrscr();
 
 	printf("Enter number of elements: ");
 	scanf("%d", &n);
@@ -65,6 +66,7 @@ void main()
 	}
 	printf("\nList: ");
 	print_list(head);
+	getch();
 }
 
 // expected output

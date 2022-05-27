@@ -26,14 +26,14 @@ void main()
 	char str[200], rev[200];
 	char *strptr = str;
 	char *revptr = rev;
+	// clrscr();
+
 	printf("Enter the string : ");
 	scanf("%s", str);
 
-	for (; *strptr != NULL; ++i)
-		strptr++;
+	for (; *strptr != NULL; ++i) strptr++;
 
-	for (; i >= 0; --i)
-	{
+	for (; i >= 0; --i){
 		strptr--;
 		*revptr = *strptr;
 		*revptr++;

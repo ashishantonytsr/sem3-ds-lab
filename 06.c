@@ -19,10 +19,11 @@
  */
 
 #include <stdio.h>
-int main()
+void main()
 {
 	int S[10][10], m, n, i, j;
 	int M[3][20], k = 0, size = 0;
+	clrscr();
 
 	printf("Enter number of rows : ");
 	scanf("%d", &m);

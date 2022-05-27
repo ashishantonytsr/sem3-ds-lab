@@ -29,6 +29,8 @@
 void main()
 {
 	int a[20][20], i, j, r, c, item;
+	// clrscr();
+
 	printf("Enter the size of the row and column : ");
 	scanf("%d %d", &r, &c);
 
@@ -45,9 +47,10 @@ void main()
 			{
 				printf("\nItem found at row %d column %d", i + 1, j + 1);
 				getch();
-				return 0;
+				return;
 			}
 	printf("\nItem not found");
+	getch();
 }
 
 // expected output

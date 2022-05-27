@@ -53,11 +53,13 @@ void displayListFromEnd();
 int main()
 {
 	int n, choice;
+	// clrscr();
+
 	head = last = NULL;
 	printf("Enter the number of nodes : ");
 	scanf("%d", &n);
-
 	createList(n);
+
 	printf("\n\t1. Display list from First\n\t2. Display list from Last\n\t-> ");
 	scanf("%d", &choice);
 	if (choice == 1)
@@ -65,6 +67,7 @@ int main()
 	else if (choice == 2)
 		displayListFromEnd();
 
+	getch();
 	return EXIT_SUCCESS;
 }
 

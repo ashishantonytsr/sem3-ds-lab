@@ -62,13 +62,15 @@ void display()
 int main()
 {
 	int choice;
+	// clrscr();
+
 	printf("Enter the size of the stack : ");
 	scanf("%d", &size);
 	do
 	{
 		printf("\nChoose from below \n\t1.Push \n\t2.Pop \n\t3.Display \n\t4.Exit \n\t-> ");
 		scanf("%d", &choice);
-		(choice == 1)		? push()
+		(choice == 1) ? push()
 		: (choice == 2) ? pop()
 		: (choice == 3) ? display()
 		: (choice == 4) ? printf("Exit point...")

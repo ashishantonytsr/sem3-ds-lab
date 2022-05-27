@@ -91,6 +91,7 @@ int main()
 {
 	int n , i, data;
 	node *head = NULL;
+	// clrscr();
 
 	printf("Enter number of elements: ");
 	scanf("%d", &n);
@@ -109,6 +110,8 @@ int main()
 
 	printf("\nList after deletion : ");
 	print_list(head);
+
+	getch();
 	return 0;
 }
 

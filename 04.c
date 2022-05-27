@@ -18,6 +18,7 @@
 void main()
 {
 	int n1, n2, i, j, a[10], b[10], k;
+	// clrscr();
 	
 	printf("Enter the size of 1st Array: ");
 	scanf("%d", &n1);

@@ -47,10 +47,11 @@ int priority(char x)
 		return 2;
 }
 
-int main()
+void main()
 {
-	char exp[20];
-	char *e, x;
+	char exp[20], *e, x;
+	// clrscr();
+
 	printf("Enter the expression :: ");
 	scanf("%s", exp);
 	e = exp;
@@ -78,6 +79,8 @@ int main()
 	// cleaning stack
 	while (top != -1)
 		printf("%c", pop());
+
+	getch();
 }
 
 // expected output

@@ -70,6 +70,8 @@ void display()
 void main()
 {
 	int choice, item;
+	// clrscr();
+
 	do
 	{
 		printf("\nChoose from below\n1.Push\n2.Pop\n3.Display\n4.Exit\n--> ");
