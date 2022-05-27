@@ -3,10 +3,10 @@
 // Algorithm
 /*
 1. start
-2. create stack STACK using array with size, size
+2. create stack STACK using array with size, SIZE
 3. initialize TOP as -1
 4. For insertion (PUSH)
-	4.1. if TOP < size-1
+	4.1. if TOP < SIZE-1
 		4.1.1. read item to be inserted as ITEM
 		4.1.2. increment TOP by 1
 		4.1.3. set STACK[TOP] as ITEM
