@@ -1,5 +1,20 @@
 // Search a element in Binary Search Tree
 
+// Algorithm
+/* 
+1. Start
+2. Create self referential structure node with members : 
+	integer DATA & pointers LEFT & RIGHT, pointing to nodes with same structure
+3. Read values into the Binary Search Tree with root, ROOT
+4. Read the item to be searched as ITEM
+5. if ROOT is NULL, print "Not Found", goto step  9
+6. if ROOT->DATA is equal to ITEM, print "Item Found", goto step 9
+7. else if ITEM < ROOT->DATA, 
+	7.1. Set ROOT as ROOT->LEFT, goto step 5
+8. else 
+	8.1. Set ROOT as ROOT->RIGHT, goto step 5
+9. Stop
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,20 +29,20 @@ struct node
 typedef struct node node;
 
 
-node *insertion(node *root, int idata)
+node *insertion(node *root, int item)
 {
 	if (root == NULL)
 	{
 		node *newNode;
 		newNode = (node *)malloc(sizeof(node));
-		newNode->data = idata;
+		newNode->data = item;
 		newNode->left = newNode->right = NULL;
 		return newNode;
 	}
-	if (idata < root->data)
-		root->left = insertion(root->left, idata);
+	if (item < root->data)
+		root->left = insertion(root->left, item);
 	else
-		root->right = insertion(root->right, idata);
+		root->right = insertion(root->right, item);
 	return root;
 }
 
@@ -54,7 +69,7 @@ bool search(node *root, int data)
 		search(root->right, data);
 }
 
-int main()
+void main()
 {
 	int n,i, item;
 	node *BST = NULL;
@@ -76,7 +91,7 @@ int main()
 
 	(search(BST, item)) ? printf("\nItem FOUND in the Binary Search Tree !!!") 
 											:	printf("\nItem NOT FOUND in the Binary Search Tree :(");
-	return 0;
+	getch();
 }
 
 // expected output
