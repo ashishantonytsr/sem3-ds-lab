@@ -17,32 +17,23 @@ bool isSorted(int test[], int len)
 
 
 // import your sorting function here
-void InsertionSort(int a[], int n)
-{
-	int i, j, temp;
-	for (i = 1; i < n; i++)
-	{
-		temp = a[i];
-		for (j = i; j > 0 && a[j - 1] > temp; j--)
-			a[j] = a[j - 1];
-		a[j] = temp;
-	}
-}
+// make sure to comment out main function in the imported file
+#include "19.c"
 
-int main()
+
+void main()
 {
 	srand(time(NULL));
 	int arr[100];
+
 	// populating array with random values
 	for (int i = 0; i < 100; i++)
 		arr[i] = rand() % 1000;
-	InsertionSort(arr, 100);
+	quick_sort(arr, 0, 100-1);
+
 	// testing...
 	// for (int i = 0; i < 100; i++)
 	// 	printf("%d ", arr[i]);
-	if(isSorted(arr, 100))
-		printf("\ntest passed");
-	else
-	printf("\ntest failed");
-	return 0;
+
+	isSorted(arr, 100) ? printf("\ntest passed") : printf("\ntest failed");
 }
