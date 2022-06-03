@@ -10,7 +10,8 @@
 	 6.1. if ARR[I] > ARR[J], swap ARR[I] & ARR[J]
 	 6.2. increment J by 1
 7. increment I by 1
-8. stop
+8. print ARR as sorted array
+9. stop
 */
 
 #include <stdio.h>

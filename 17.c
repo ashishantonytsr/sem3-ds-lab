@@ -11,7 +11,8 @@
 	 6.2. increment j by 1
 7. if POS not equal to I, swap ARR[I] and ARR[I]
 8. increment i by 1
-9. Stop
+9. print ARR as sorted array
+10. Stop
  */
 
 #include <stdio.h>
