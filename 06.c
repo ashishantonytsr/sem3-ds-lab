@@ -32,11 +32,8 @@ void main()
 	printf("Enter elements in the matrix \n ");
 	for (i = 0; i < m; i++)
 		for (j = 0; j < n; j++)
-		{
 			scanf("%d", &S[i][j]);
-			if (S[i][j] != 0)
-				size++;
-		}
+
 
 	printf("The matrix is \n");
 	for (i = 0; i < m; i++)
@@ -59,7 +56,7 @@ void main()
 	printf("Triplet representation of the matrix is \n");
 	for (i = 0; i < 3; i++)
 	{
-		for (j = 0; j < size; j++)
+		for (j = 0; j < k; j++)
 			printf(" %d ", M[i][j]);
 		printf("\n");
 	}

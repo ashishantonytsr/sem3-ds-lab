@@ -55,6 +55,7 @@ void main()
 	printf("Enter the expression :: ");
 	scanf("%s", exp);
 	e = exp;
+	printf("Expression in postfix format : ");
 	while (*e != '\0')
 	{
 		// operand

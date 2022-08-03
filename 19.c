@@ -25,16 +25,13 @@
 void swap(int *x, int *y)
 {
 	int t;
-	if (x != y){
-		t = *x;		*x = *y;		*y = t;
-	}
+	t = *x;		*x = *y;		*y = t;
 }
 
 void quick_sort(int arr[], int beg, int end)
 {
 	int pivot = arr[end], i = beg - 1, j, pi; // partition index
-	if (beg > end)
-		return;
+	if (beg > end)	return;
 	
 	for (j = beg; j <= end - 1; j++)
 		if (arr[j] < pivot)

@@ -31,13 +31,9 @@ void main()
 	printf("Enter the string : ");
 	scanf("%s", str);
 
-	for (; *strptr != NULL; ++i) strptr++;
-
-	for (; i >= 0; --i){
-		strptr--;
+	for ( ; *strptr != NULL; i++ ) strptr++;
+	for ( strptr--; i >= 0; i--, strptr--, *revptr++ )
 		*revptr = *strptr;
-		*revptr++;
-	}
 
 	printf("Reverse of the string is %s", rev);
 	getch();

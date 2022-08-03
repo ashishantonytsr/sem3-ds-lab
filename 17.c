@@ -9,7 +9,7 @@
 6. while J<N, repeat step 6
 	 6.1. if ARR[J] < ARR[POS], set POS= J
 	 6.2. increment j by 1
-7. if POS not equal to I, swap ARR[I] and ARR[I]
+7. if POS not equal to I, swap ARR[I] and ARR[POS]
 8. increment i by 1
 9. print ARR as sorted array
 10. Stop
@@ -45,5 +45,6 @@ int main()
 	for (i = 0; i < n; i++)
 		printf("%d ", a[i]);
 
+	getch();
 	return 0;
 }

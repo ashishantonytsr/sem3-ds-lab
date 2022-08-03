@@ -54,9 +54,11 @@ void display()
 	int i;
 	if (top == -1)
 		printf("\n Stack is empty!");
-	else
+	else{
+		printf("STACK");
 		for (i = top; i >= 0; i--)
 			printf("\n   %d", stack[i]);
+	}
 }
 
 int main()

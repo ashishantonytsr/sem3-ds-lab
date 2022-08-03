@@ -18,7 +18,7 @@
 
 void main()
 {
-	int array[5], i, j, temp, n;
+	int array[50], i, j, temp, n;
 	printf("Enter the limit: ");
 	scanf("%d", &n);
 	printf("Enter the Elements : ");
@@ -34,8 +34,8 @@ void main()
 				array[j] = temp;
 			}
 
-	printf("\n Sorted Array is : \n");
+	printf("\n Sorted Array is : ");
 	for (i = 0; i < n; i++)
-		printf("%d\n", array[i]);
+		printf("%d ", array[i]);
 	getch();
 }

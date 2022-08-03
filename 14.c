@@ -78,7 +78,7 @@ void enqueue()
 	int item;
 	node *newNode;
 
-	printf("Enter the item:\n");
+	printf("Enter the item: ");
 	scanf("%d", &item);
 	newNode = (node *)malloc(sizeof(node));
 	newNode->data = item;
