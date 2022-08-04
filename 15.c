@@ -18,7 +18,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 struct node
 {
@@ -56,13 +55,13 @@ void display(node *root)
 	display(root->right);
 }
 
-bool search(node *root, int data)
+short int search(node *root, int data)
 {
 	if (root == NULL)
-		return false;
+		return 0;
 
 	if (root->data == data)
-		return true;
+		return 1;
 	else if (data < root->data)
 		search(root->left, data);
 	else
@@ -89,8 +88,10 @@ void main()
 	printf("\n\nEnter the item to search: ");
 	scanf("%d", &item);
 
-	(search(BST, item)) ? printf("\nItem FOUND in the Binary Search Tree !!!") 
-											:	printf("\nItem NOT FOUND in the Binary Search Tree :(");
+	if (search(BST, item) == 1)
+		printf("\nItem FOUND in the Binary Search Tree !!!");
+	else
+		printf("\nItem NOT FOUND in the Binary Search Tree :(");
 	getch();
 }
 
