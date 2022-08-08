@@ -22,7 +22,6 @@
 19. **Quick Sort**
 20. **Bubble Sort**
 ---
-___(* Incompleted)___
 
 <> *_An additional file is added for testing sorting algorithms_* <>
 
