@@ -42,7 +42,6 @@
 **20 &emsp;		Bubble Sort**
 
 ---
-___(* Incompleted)___
 
 <> *_An additional file is added for testing sorting algorithms_* <>
 
