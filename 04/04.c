@@ -1,19 +1,5 @@
 // Append two arrays
 
-// Algorithm
-/*
-1. start
-2. declare arr1[10], arr2[10], n1, n2
-2. read the size of first & second arrays as n1 & n2
-3. read items to arrays arr1 & arr2
-4. set k = n1, j = 0
-5. while k < n1+n2, repeat step 5
-	5.1. arr1[k] = arr2[j]
-	5.2. increment k & j by 1
-6. print appended array as arr1
-7. stop
-*/
-
 #include <stdio.h>
 void main()
 {

@@ -1,41 +1,5 @@
 // Creation of doubly linked list
 
-// Algorithm
-/*
-1. start
-2. create a self referential structure for the node with members :
-	integer DATA, pointers PREV & NEXT pointing to the same structure
-3. create node pointers HEAD, LAST and set both as NULL
-4. To insert first node,
-	4.1. if HEAD is not NULL
-	4.2. read item to be inserted as ITEM
-	4.3. set HEAD->DATA as ITEM
-	4.4. set HEAD->PREV and HEAD->NEXT as NULL
-	4.5. set LAST as HEAD
-5. To insert rest of the nodes,
-	5.1. read item to be inserted as ITEM
-	5.2. create node NEW_NODE as allocate memory
-	5.2. if NEW_NODE is not NULL,
-		5.3.1. set NEW_NODE->DATA as DATA
-		5.3.2. set NEW_NODE->PREV as LAST
-		5.3.3. set NEW_NODE->NEXT as NULL
-		5.3.4. set LAST->NEXT as NEW_NODE
-		5.3.5. set LAST as NEW_NODE
-6. To print the linked list from first
-	6.1. if HEAD is NULL, exit
-	6.2. create node TEMP and assign HEAD to it
-	6.3. while TEMP is not NULL, repeat steps 6.4 & 6.5
-	6.4. print TEMP->DATA
-	6.5. set TEMP as TEMP->NEXT
-7. To print the linked list from last
-	7.1. if HEAD is NULL, exit
-	7.2. create node TEMP and assign LAST to it
-	7.3. while TEMP is not NULL, repeat steps 7.4 & 7.5
-	7.4. print TEMP->DATA
-	7.5. set TEMP as TEMP->PREV
-8. stop
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 

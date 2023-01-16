@@ -2,18 +2,18 @@
 ---
 ### Algorithm
 
-*Step 1* : **Start**\
-*Step 2* : **Declare arrays str, rev & pointers strptr, revptr**\
-*Step 3* : **Assign \*strptr = str and \*revptr = rev**\
-*Step 4* : **Read the string as str**\
-*Step 5* : **Set i = -1**\
-*Step 6* : **While \*strptr not equal to NULL**\
-&emsp; *Step 6.1* : **Increment strptr by  1**\
-&emsp; *Step 6.2* : **Increment i by 1**\
-*Step 7* : **While i>=0**\
-&emsp; *Step 7.1* : **Decrement strptr by 1**\
-&emsp; *Step 7.2* : **Set \*revptr = \*strptr**\
-&emsp; *Step 7.3* : **Increment revptr by 1**\
-&emsp; *Step 7.4* : **Decrement i by 1**\
-*Step 8* : **Print rev as reversed string**\
-*Step 9* : **Stop**\
+*Step 01* : **Start**\
+*Step 02* : **declare arrays str, rev & pointers strptr, revptr**\
+*Step 03* : **assign \*strptr = str and \*revptr = rev**\
+*Step 04* : **read the string as str**\
+*Step 05* : **set i = -1**\
+*Step 06* : **while \*strptr not equal to NULL**\
+&emsp; *Step 6.1* : **increment strptr by  1**\
+&emsp; *Step 6.2* : **increment i by 1**\
+*Step 07* : **while i>=0**\
+&emsp; *Step 7.1* : **decrement strptr by 1**\
+&emsp; *Step 7.2* : **set \*revptr = \*strptr**\
+&emsp; *Step 7.3* : **increment revptr by 1**\
+&emsp; *Step 7.4* : **decrement i by 1**\
+*Step 08* : **print rev as reversed string**\
+*Step 09* : **Stop**
