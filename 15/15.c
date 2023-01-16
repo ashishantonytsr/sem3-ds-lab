@@ -1,21 +1,5 @@
 // Search a element in Binary Search Tree
 
-// Algorithm
-/* 
-1. Start
-2. Create self referential structure node with members : 
-	integer DATA & pointers LEFT & RIGHT, pointing to nodes with same structure
-3. Read values into the Binary Search Tree with root, ROOT
-4. Read the item to be searched as ITEM
-5. if ROOT is NULL, print "Not Found", goto step  9
-6. if ROOT->DATA is equal to ITEM, print "Item Found", goto step 9
-7. else if ITEM < ROOT->DATA, 
-	7.1. Set ROOT as ROOT->LEFT, goto step 5
-8. else 
-	8.1. Set ROOT as ROOT->RIGHT, goto step 5
-9. Stop
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 

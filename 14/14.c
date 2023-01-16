@@ -1,36 +1,5 @@
 // Implement queue using linked list
 
-// Algorithm
-/*
-1. start
-2. create a self referential structure for the node with members :
-	 integer DATA and a pointer NEXT pointing to the same structure
-3. create a node pointer FRONT, REAR and set as NULL
-4. For insertion (ENQUEUE)
-	4.1. read item to be inserted as ITEM
-	4.2. create node NEW_NODE & allocate memory
-	4.3. set NEW_NODE->DATA as ITEM & NEW_NODE->NEXT as NULL
-	4.4. if REAR is NULL, set FRONT & REAR as NEW_NODE
-	4.5. else,
-		4.5.1. set REAR->NEXT as NEW_NODE
-		4.5.2. set REAR as NEW_NODE
-	4.6. exit
-5. For deletion (DEQUEUE)
-	5.1. if FRONT is NULL, print "Queue Underflow", exit
-	5.2. else, print FRONT->DATA as deleted item
-	5.3. if FRONT equals to REAR, set FRONT & REAR as NULL
-	5.4. else, FRONT as FRONT->NEXT
-6. To display items in queue
-	6.1. if FRONT is NULL, print "Queue is empty"
-	6.2. else,
-		6.2.1. create node ITER & assign FRONT to it
-		6.2.2. while ITER is not NULL, repeat steps 6.2.3 & 6.2.4
-		6.2.3. print ITER->DATA
-		6.2.4. set ITER as ITER->NEXT
-	6.3. exit
-7. stop
- */
-
 #include <stdio.h>
 
 struct node

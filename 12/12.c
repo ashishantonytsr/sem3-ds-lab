@@ -1,26 +1,5 @@
 // Convert infix expression to postfix expression
 
-// Algorithm
-/*
-1. start
-2. read infix expression
-3. repeat steps 4 to 7 until the end of the infix expression
-4. if charector is operand, print charector
-5. else if charector is left parenthesis, push to stack
-6. else if charector is right parenthesis,
-	 6.1. pop charector from stack and add it to x
-	 6.2. while x not equal to left parenthesis,
-			6.2.1. print x
-			6.2.2. pop charector from stack and add it to x
-7. else,
-	 7.1. while priority of top item in stack > priority of charector,
-			7.1.1. print popped item
-	 7.2 push charector to stack
-8. while stack is not empty,
-	 8.1. print popped item
-9. stop
-*/
-
 #include <stdio.h>
 #include <ctype.h>
 char stack[20];

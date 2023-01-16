@@ -1,29 +1,5 @@
 // Implement stack using linked list
 
-// Algorithm
-/*
-1. start
-2. create a self referential structure for the node with members :
-	 integer DATA and a pointer NEXT pointing to the same structure
-3. create a node pointer TOP and set as NULL
-4. For insertion (PUSH)
-	4.1. read item to be inserted as ITEM
-	4.2. create node NEW_NODE & allocate memory
-	4.3. set NEW_NODE->DATA as ITEM & NEW_NODE->NEXT as TOP
-	4.4. set TOP as NEW_NODE
-5. For deletion (POP)
-	5.1. if TOP is NULL, print "Stack Underflow", exit
-	5.2. create node TEMP and assign TOP to it
-	5.3. set TOP as TOP->NEXT
-	5.4. return TEMP->DATA & free memory allocated for TEMP
-6. To print Stack
-	6.1. create node TEMP and assign TOP to it
-	6.2. while TEMP is not NULL
-		6.2.1. print TEMP->DATA
-		6.2.2. set TEMP as TEMP->NEXT
-7. stop
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 struct node

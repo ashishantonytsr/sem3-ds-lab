@@ -1,33 +1,5 @@
 // Implement queue using array
 
-// Algorithm
-/*
-1. start
-2. create queue Q using array with size, SIZE
-3. initialize FRONT & REAR as -1
-4. For insertion (ENQUEUE)
-	4.1. if REAR < SIZE-1
-		4.1.1. read item to be inserted as ITEM
-		4.1.2. if FRONT is -1, increment FRONT by 1
-		4.1.3. increment REAR by 1
-		4.1.4. set Q[REAR] as ITEM
-	4.2. else, print "Queue Overflow"
-5. For deletion (DEQUEUE)
-	5.1. if FRONT is -1 or FRONT > REAR,
-		5.1.1. print "Queue Underflow"
-	5.2. else,
-		5.2.1. print Q[FRONT] as deleted item
-		5.2.2. increment FRONT by 1
-6. To display queue
-	6.1. if FRONT is -1 or FRONT>REAR,
-		6.1.1. print "Queue is empty", exit
-	6.2. set I=FRONT
-	6.3. while I<=REAR, repeat steps 6.3.1 & 6.3.2
-		6.3.1. print Q[I]
-		6.3.2. increment I by 1
-7. stop
- */
-
 #include <stdio.h>
 #define SIZE 50
 int Q[SIZE], rear = -1, front = -1;

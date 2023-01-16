@@ -1,19 +1,5 @@
 // Bubble Sort
 
-/*
-1. Start
-2. read N as number of elements and read array ARR with N elements
-3. set I=0
-4. while I<N, repeat steps 5 to 7
-5. set J=0
-6. while J<N-1, repeat step 6
-	 6.1. if ARR[J] >= ARR[J+1], swap ARR[J] & ARR[J+1]
-	 6.2. increment J by 1
-7. increment I by 1
-8. print ARR as sorted array
-9. stop
-*/
-
 #include <stdio.h>
 
 void swap(int *x, int *y)

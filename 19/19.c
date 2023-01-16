@@ -1,25 +1,5 @@
 // Quick Sort
 
-// Algorithm
-/* 
-1. start
-2. read N elements into the array ARR
-3. set BEG as 0 & END as N-1
-4. if beg > end, return
-5. set PIVOT as last element in the ARR
-6. set I as BEG-1 & J as BEG
-7. while J <= END-1, repeat steps 8 to 10
-8. increment I by 1
-9. if ARR[J] < PIVOT, swap ARR[I] & ARR[J]
-10. increment J by 1
-11. swap ARR[I+1] & ARR[END]
-12. set INDEX as I+1
-13. set END as INDEX - 1 & goto step 4
-14. set BEG as INDEX + 1 & goto step 4
-15. print ARR as sorted array
-16. stop
-*/
-
 #include <stdio.h>
 
 void swap(int *x, int *y)
